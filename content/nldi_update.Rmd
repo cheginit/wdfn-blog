@@ -170,7 +170,6 @@ Then, we use [WaterData](https://labs.waterdata.usgs.gov/geoserver/index.html) G
 ```{python}
 wd = WaterData("nhdflowline_network")
 flw = wd.byid("comid", comids)
-flw = nhd.prepare_nhdplus(flw, 0, 0, purge_non_dendritic=False)
 ```
 
 Next, we should sort the ComIDs topologically.
